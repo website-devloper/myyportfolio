@@ -1,24 +1,23 @@
-/* /app/globals.css */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css");
+/* Import only the Bootstrap grid system for responsiveness */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap-grid.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-/* ------------------------- */
-/* BRAND THEME & VARIABLES   */
-/* ------------------------- */
+
+/* Tailwind CSS Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary-color: #6C63FF; /* Electric Purple */
   --secondary-color: #2A2D43; /* Dark Tech */
   --accent-color: #00E5FF; /* Neon Blue */
   --background-color: #F7F7FA;
   --text-color: #222222;
-  --card-bg: rgba(255, 255, 255, 0.6);
-  --glass-blur: 10px;
-  --border-radius-sm: 12px;
-  --border-radius-md: 20px;
+  --primary-color-rgb: 108, 99, 255; /* RGB values for --primary-color */
   --shadow-glow: 0 0 15px rgba(108, 99, 255, 0.5), 0 0 30px rgba(0, 229, 255, 0.3);
   --font-space-grotesk: "Space Grotesk", sans-serif;
   --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 }
-
 /* ------------------------- */
 /* BASE & TYPOGRAPHY         */
 /* ------------------------- */
@@ -46,111 +45,38 @@ h1, h2, h3, h4, h5, h6 {
 .section-subtitle {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--secondary-color);
-    margin-bottom: 3rem;
-}
-
-section {
-    padding: 80px 0;
-}
-
-/* ------------------------- */
-/* BUTTONS & LINKS           */
-/* ------------------------- */
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  border-radius: var(--border-radius-sm);
-  padding: 12px 24px;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #5a52e0;
-  border-color: #5a52e0;
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-glow);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-  border-radius: var(--border-radius-sm);
-  padding: 12px 24px;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.btn-secondary:hover {
-  background-color: var(--secondary-color);
-  color: #fff;
-  transform: translateY(-3px);
-}
-
-/* ------------------------- */
-/* NAVBAR STYLING            */
-/* ------------------------- */
-.navbar {
-  background-color: rgba(247, 247, 250, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 1rem 0;
-}
-
-.navbar-brand {
-  font-family: var(--font-space-grotesk);
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: var(--primary-color) !important;
-}
-
-.nav-link {
-  color: var(--secondary-color) !important;
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 8px;
-  margin: 0 12px;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-  transition: width 0.3s ease-in-out;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: 70%;
+    color: var(--secondary-color); /* Kept secondary color for contrast */
+    margin-bottom: 3.5rem; /* Slightly increased margin for better spacing */
 }
 
 /* ------------------------- */
 /* HERO SECTION              */
 /* ------------------------- */
-.hero-section {
+.hero-section {  
   min-height: 100vh;
   display: flex;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  /* Enhanced background for the about section */
+  background: linear-gradient(135deg, var(--background-color) 0%, rgba(var(--primary-color-rgb), 0.03) 100%);
+  position: relative; /* Ensure positioning context for any future absolute elements */
   background: radial-gradient(circle at 10% 20%, rgba(108, 99, 255, 0.05), transparent 40%),
               radial-gradient(circle at 90% 80%, rgba(0, 229, 255, 0.05), transparent 40%);
 }
-
-.hero-section h1 {
-  font-size: 3.5rem;
+.hero-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem); /* Responsive font size */
   font-weight: 700;
   line-height: 1.2;
+  color: var(--secondary-color);
 }
 
-.hero-section .lead {
-  font-size: 1.25rem;
-  color: #555;
+.hero-subtitle {
+  font-family: var(--font-space-grotesk);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--secondary-color);
+  font-weight: 500;
+  height: 40px; /* Prevents layout shift from TypeAnimation */
 }
 
 .futuristic-shape {
@@ -174,80 +100,10 @@ section {
 }
 
 /* ------------------------- */
-/* GLASSMORPHISM CARD        */
-/* ------------------------- */
-.glass-card {
-  background: var(--card-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--border-radius-md);
-  padding: 2rem;
-  transition: all 0.3s ease;
-}
-
-/* ------------------------- */
-/* SKILLS & PROJECTS CARDS   */
-/* ------------------------- */
-.skill-card, .project-card, .service-card, .testimonial-card {
-  background: var(--card-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: var(--border-radius-md);
-  padding: 2rem;
-  transition: all 0.3s ease;
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.skill-card:hover, .project-card:hover, .service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: var(--shadow-glow);
-}
-
-.skill-icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.project-card img {
-  border-radius: var(--border-radius-sm);
-  margin-bottom: 1rem;
-}
-
-.tech-badge {
-  background-color: rgba(108, 99, 255, 0.1);
-  color: var(--primary-color);
-  padding: 0.3em 0.6em;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
-
-/* ------------------------- */
-/* CONTACT FORM              */
-/* ------------------------- */
-.form-control {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid rgba(0,0,0,0.1);
-    padding: 12px 15px;
-    border-radius: var(--border-radius-sm);
-}
-
-.form-control:focus {
-    background-color: #fff;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
-}
-
-/* ------------------------- */
 /* FOOTER                    */
 /* ------------------------- */
 .footer {
   background-color: var(--secondary-color);
-  color: #fff;
   padding: 40px 0 20px;
 }
 
@@ -261,14 +117,6 @@ section {
   color: var(--accent-color);
 }
 
-.footer .social-icon {
-  font-size: 1.5rem;
-  margin: 0 10px;
-}
-
-/* ------------------------- */
-/* RESPONSIVENESS            */
-/* ------------------------- */
 @media (max-width: 992px) {
     .hero-section h1 {
         font-size: 2.8rem;
@@ -287,49 +135,63 @@ section {
 }
 
 @media (max-width: 768px) {
-    section {
-        padding: 60px 0;
-    }
     .hero-section h1 {
         font-size: 2.2rem;
     }
 }
+/* =================================================================
+Hero Section Background Shapes
+================================================================= */
 
-/* In your CSS file */
-
-/* When the navbar is collapsed (mobile view) */
-.navbar-collapse {
-  align-items: flex-start; /* Align items to the start */
-}
-
-.navbar-nav .nav-item .nav-link {
-  display: inline-block; /* Make the link only as wide as its content */
+.hero-section {
   position: relative;
-  padding-bottom: 5px; /* Add some space for the underline */
-  transition: color 0.3s;
+  overflow: hidden; /* This is important to contain the shapes */
 }
 
-/* Remove default hover effects if any */
-.navbar-nav .nav-item .nav-link:hover {
-  color: #ccc; /* Optional: change text color on hover */
-}
-
-/* Create the underline using a pseudo-element */
-.navbar-nav .nav-item .nav-link::after {
-  content: '';
+.background-shape {
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #ffffff; /* Color of the underline */
-  transform-origin: bottom left;
-  transition: transform 0.25s ease-out;
+  border-radius: 50%;
+  opacity: 0.08; /* Kept subtle */
+  z-index: 0; /* Places shapes behind the content */
+  animation: float 12s ease-in-out infinite;
 }
 
-/* Animate the underline on hover */
-.navbar-nav .nav-item .nav-link:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 10%;
+  left: 5%;
+  background-color: var(--primary-color); /* Uses your site's purple */
+  animation-delay: 0s;
+}
+
+.shape-2 {
+  width: 150px;
+  height: 150px;
+  bottom: 15%;
+  right: 10%;
+  background-color: var(--secondary-color); /* Uses your site's secondary color */
+  animation-delay: 4s;
+}
+
+.shape-3 {
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 45%;
+  background-color: var(--primary-color);
+  animation-delay: 8s;
+}
+
+/* Keyframes for the floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
 }
