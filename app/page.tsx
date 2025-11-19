@@ -14,32 +14,37 @@ export default function Home() {
 
 
   return (
-    <div>
-      <Navbar />
-      <main>
-        <div id="home">
-          <Hero />
+    <html lang="en">
+      <body>
+        <div>
+          <Navbar />
+          <main>
+            <div id="home">
+              <Hero />
+            </div>
+            <div id="about">
+              <About />
+            </div>
+            <div id="skills">
+              <Skills />
+            </div>
+            <div id="projects">
+              <Projects />
+            </div>
+            <div id="services">
+              <Services />
+            </div>
+            <div id="testimonials">
+              <Testimonials />
+            </div>
+            <div id="contact">
+              <Contact />
+            </div>
+          </main>
+          <Footer />
         </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="skills">
-          <Skills />
-        </div>
-        <div id="projects">
-          <Projects />
-        </div>
-        <div id="services">
-          <Services />
-        </div>
-        <div id="testimonials">
-          <Testimonials />
-        </div>
-        <div id="contact">
-          <Contact />
-        </div>
-      </main>
-      <Footer />
-    </div>
+      </body>
+    </html>
+
   );
 }

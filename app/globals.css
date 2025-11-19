@@ -295,3 +295,41 @@ section {
     }
 }
 
+/* In your CSS file */
+
+/* When the navbar is collapsed (mobile view) */
+.navbar-collapse {
+  align-items: flex-start; /* Align items to the start */
+}
+
+.navbar-nav .nav-item .nav-link {
+  display: inline-block; /* Make the link only as wide as its content */
+  position: relative;
+  padding-bottom: 5px; /* Add some space for the underline */
+  transition: color 0.3s;
+}
+
+/* Remove default hover effects if any */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ccc; /* Optional: change text color on hover */
+}
+
+/* Create the underline using a pseudo-element */
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff; /* Color of the underline */
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+/* Animate the underline on hover */
+.navbar-nav .nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

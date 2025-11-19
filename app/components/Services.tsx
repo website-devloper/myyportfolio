@@ -1,4 +1,3 @@
-// /app/components/Services.tsx
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const servicesData = [
