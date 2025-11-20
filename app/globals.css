@@ -617,6 +617,19 @@ section {
 }
 
 /* ------------------------- */
+/* ABOUT SECTION             */
+/* ------------------------- */
+.about-card {
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--hover-color);
+  box-shadow: 0 10px 30px -10px var(--hover-color);
+}
+
+/* ------------------------- */
 /* SERVICES SECTION          */
 /* ------------------------- */
 .service-card {

@@ -22,7 +22,7 @@ const Skills = () => {
         <div className="row g-4">
           {skillsData.map((skill, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="glass-panel p-4 h-100 text-center glow-effect skill-card-hover transition-all" style={{ '--hover-color': skill.color } as React.CSSProperties}>
+              <div className="glass-panel p-4 h-100 text-center about-card" style={{ '--hover-color': skill.color } as React.CSSProperties}>
                 <div className="d-inline-flex align-items-center justify-content-center mb-4 rounded-circle icon-box" style={{ width: '80px', height: '80px', background: `color-mix(in srgb, ${skill.color}, transparent 90%)` }}>
                   <i className={`bi ${skill.icon} fs-1`} style={{ color: skill.color }}></i>
                 </div>

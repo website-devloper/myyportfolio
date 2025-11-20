@@ -43,28 +43,28 @@ const About = () => {
           <div className="col-lg-6">
             <div className="row g-4">
               <div className="col-md-6">
-                <div className="glass-panel p-4 h-100 glow-effect">
+                <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--primary-color)' } as React.CSSProperties}>
                   <i className="bi bi-code-square fs-2 mb-3 d-block" style={{ color: 'var(--primary-color)' }}></i>
                   <h5 className="text-white mb-2">Full Stack</h5>
                   <p className="text-white-50 small mb-0">Developing custom, high-performance web applications tailored to your business needs.</p>
                 </div>
               </div>
               <div className="col-md-6 mt-md-5">
-                <div className="glass-panel p-4 h-100 glow-effect">
+                <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--secondary-color)' } as React.CSSProperties}>
                   <i className="bi bi-robot fs-2 mb-3 d-block" style={{ color: 'var(--secondary-color)' }}></i>
                   <h5 className="text-white mb-2">AI Automation</h5>
                   <p className="text-white-50 small mb-0">Automating repetitive tasks and workflows to increase efficiency and reduce costs.</p>
                 </div>
               </div>
               <div className="col-md-6 mt-md-n5">
-                <div className="glass-panel p-4 h-100 glow-effect">
+                <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--accent-cyan)' } as React.CSSProperties}>
                   <i className="bi bi-palette fs-2 mb-3 d-block" style={{ color: 'var(--accent-cyan)' }}></i>
                   <h5 className="text-white mb-2">UI/UX Design</h5>
                   <p className="text-white-50 small mb-0">Designing modern, intuitive interfaces that provide an exceptional user experience.</p>
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="glass-panel p-4 h-100 glow-effect">
+                <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': '#10b981' } as React.CSSProperties}>
                   <i className="bi bi-shield-check fs-2 mb-3 d-block" style={{ color: '#10b981' }}></i>
                   <h5 className="text-white mb-2">IT Solutions</h5>
                   <p className="text-white-50 small mb-0">Providing secure, scalable IT infrastructure and technical support solutions.</p>
