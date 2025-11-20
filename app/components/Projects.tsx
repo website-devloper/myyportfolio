@@ -12,27 +12,45 @@ const projectsData = [
 
 const Projects = () => {
   return (
-    <section className="projects-section bg-light">
-      <div className="container">
-        <div className="text-center">
-            <h3 className="section-title">My Work</h3>
-            <h2 className="section-subtitle">Featured Projects</h2>
+    <section id="projects" className="projects-section position-relative overflow-hidden">
+      <div className="hero-bg-glow" style={{ bottom: '10%', left: '-10%', width: '600px', height: '600px', opacity: '0.1' }}></div>
+
+      <div className="container position-relative z-1">
+        <div className="text-center mb-5">
+          <h3 className="section-subtitle">My Work</h3>
+          <h2 className="section-title">Featured <span className="text-gradient">Projects</span></h2>
         </div>
+
         <div className="row g-4">
           {projectsData.map((project, index) => (
             <div className="col-lg-4 col-md-6" key={index}>
-              <div className="project-card">
-                <Image src={project.image} alt={project.title} width={100} height={100} className="img-fluid mb-3" />
-                <h5 className="mt-3">{project.title}</h5>
-                <p>{project.description}</p>
-                <div className="mb-3">
-                  {project.tech.map((t, i) => (
-                    <span className="badge tech-badge me-2 mb-2" key={i}>{t}</span>
-                  ))}
+              <div className="glass-panel h-100 project-card overflow-hidden position-relative group">
+                <div className="project-image-wrapper position-relative overflow-hidden">
+                  <div className="overlay position-absolute w-100 h-100 bg-dark opacity-0 z-2 transition-all"></div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={400}
+                    height={300}
+                    className="img-fluid w-100 object-fit-cover transition-all"
+                    style={{ height: '200px' }}
+                  />
+                  <div className="project-action position-absolute top-50 start-50 translate-middle z-3 opacity-0 transition-all">
+                    <a href={project.link} className="btn btn-primary rounded-circle p-3 d-flex align-items-center justify-content-center" style={{ width: '50px', height: '50px' }}>
+                      <i className="bi bi-arrow-up-right fs-5"></i>
+                    </a>
+                  </div>
                 </div>
-                <a href={project.link} className="btn btn-sm btn-outline-primary">
-                  View Project <i className="bi bi-arrow-right"></i>
-                </a>
+
+                <div className="p-4">
+                  <h5 className="text-white fw-bold mb-2">{project.title}</h5>
+                  <p className="text-white-50 small mb-3">{project.description}</p>
+                  <div className="d-flex flex-wrap gap-2">
+                    {project.tech.map((t, i) => (
+                      <span className="badge glass-badge fw-normal text-white-50" key={i}>{t}</span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           ))}

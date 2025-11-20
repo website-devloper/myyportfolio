@@ -42,7 +42,7 @@ const Navbar = () => {
         <Link href="#home" className="navbar-brand">
           Fatima.Zahra.Dev
         </Link>
-        
+
         <button
           className="navbar-toggler"
           type="button"
@@ -61,7 +61,13 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             {navItems.map((item) => (
               <li className="nav-item" key={item}>
-                <Link href={`#${item.toLowerCase()}`} className={`nav-link ${activeSection === item.toLowerCase() ? 'active' : ''}`} onClick={toggleNavbar}>
+                <Link
+                  href={`#${item.toLowerCase()}`}
+                  className={`nav-link ${activeSection === item.toLowerCase() ? 'active' : ''} d-inline-block`}
+                  onClick={() => {
+                    setIsOpen(false);
+                  }}
+                >
                   {item.charAt(0).toUpperCase() + item.slice(1)}
                 </Link>
               </li>
@@ -74,4 +80,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
-   
+
