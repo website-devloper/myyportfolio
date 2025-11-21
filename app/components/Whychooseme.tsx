@@ -51,13 +51,13 @@ const WhyChooseMe = () => {
 
             <div className="container position-relative z-1">
                 <div className="text-center mb-5" data-aos="fade-up">
-                    <span className="why-badge">
+                    <span className="section-subtitle">
                         My Value Proposition
                     </span>
                     <h2 className="section-title mb-4">
-                        Why Choose <span className="text-gradient-why">Me?</span>
+                        Why Choose <span className="text-gradient">Me?</span>
                     </h2>
-                    <p className="text-muted mx-auto section-desc">
+                    <p className="text-white-100 mx-auto section-desc">
                         I deliver more than just code. I provide a partnership focused on your success, combining technical expertise with creative vision.
                     </p>
                 </div>
