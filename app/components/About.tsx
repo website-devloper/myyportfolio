@@ -17,24 +17,24 @@ const About = () => {
               <p className="lead text-white mb-4">
                 I am <span className="text-primary fw-bold">WevTex</span>, a Full Stack Developer and IT Solutions Builder passionate about creating <span className="text-white">modern, efficient, and scalable</span> digital solutions.
               </p>
-              <p className="text-white-50 mb-4">
-                My mission is to create modern, secure, and scalable digital solutions that help businesses grow. Whether it's developing a web application, automating a workflow with AI, or designing a user-friendly interface, I am dedicated to delivering high-quality results.
+              <p className="text-white-1000 mb-4">
+                My mission is to createmodern, secure, and scalable digital solutions that help businesses grow. Whether it's developing a web application, automating a workflow with AI, or designing a user-friendly interface, I am dedicated to delivering high-quality results.
               </p>
 
               <div className="d-flex gap-4 mt-5">
                 <div>
                   <h2 className="fw-bold text-gradient mb-0">5+</h2>
-                  <p className="small text-white-50">Years Exp.</p>
+                  <p className="small text-white-1000">Years Exp.</p>
                 </div>
                 <div className="vr bg-secondary opacity-25"></div>
                 <div>
                   <h2 className="fw-bold text-gradient mb-0">50+</h2>
-                  <p className="small text-white-50">Projects</p>
+                  <p className="small text-white-1000">Projects</p>
                 </div>
                 <div className="vr bg-secondary opacity-25"></div>
                 <div>
                   <h2 className="fw-bold text-gradient mb-0">100%</h2>
-                  <p className="small text-white-50">Satisfaction</p>
+                  <p className="small text-white-1000">Satisfaction</p>
                 </div>
               </div>
             </div>
@@ -46,28 +46,28 @@ const About = () => {
                 <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--primary-color)' } as React.CSSProperties}>
                   <i className="bi bi-code-square fs-2 mb-3 d-block" style={{ color: 'var(--primary-color)' }}></i>
                   <h5 className="text-white mb-2">Full Stack</h5>
-                  <p className="text-white-50 small mb-0">Developing custom, high-performance web applications tailored to your business needs.</p>
+                  <p className="text-white-100 small mb-0">Developing custom, high-performance web applications tailored to your business needs.</p>
                 </div>
               </div>
               <div className="col-md-6 mt-md-5">
                 <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--secondary-color)' } as React.CSSProperties}>
                   <i className="bi bi-robot fs-2 mb-3 d-block" style={{ color: 'var(--secondary-color)' }}></i>
                   <h5 className="text-white mb-2">AI Automation</h5>
-                  <p className="text-white-50 small mb-0">Automating repetitive tasks and workflows to increase efficiency and reduce costs.</p>
+                  <p className="text-white-100 small mb-0">Automating repetitive tasks and workflows to increase efficiency and reduce costs.</p>
                 </div>
               </div>
               <div className="col-md-6 mt-md-n5">
                 <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--accent-cyan)' } as React.CSSProperties}>
                   <i className="bi bi-palette fs-2 mb-3 d-block" style={{ color: 'var(--accent-cyan)' }}></i>
                   <h5 className="text-white mb-2">UI/UX Design</h5>
-                  <p className="text-white-50 small mb-0">Designing modern, intuitive interfaces that provide an exceptional user experience.</p>
+                  <p className="text-white-100 small mb-0">Designing modern, intuitive interfaces that provide an exceptional user experience.</p>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': '#10b981' } as React.CSSProperties}>
                   <i className="bi bi-shield-check fs-2 mb-3 d-block" style={{ color: '#10b981' }}></i>
                   <h5 className="text-white mb-2">IT Solutions</h5>
-                  <p className="text-white-50 small mb-0">Providing secure, scalable IT infrastructure and technical support solutions.</p>
+                  <p className="text-white-100 small mb-0">Providing secure, scalable IT infrastructure and technical support solutions.</p>
                 </div>
               </div>
             </div>

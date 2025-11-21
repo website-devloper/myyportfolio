@@ -38,7 +38,7 @@ const Hero = () => {
               />
             </h2>
 
-            <p className="lead text-white mb-5" style={{ maxWidth: '600px' }}>
+            <p className="lead text-white-100 mb-5" style={{ maxWidth: '600px' }}>
               Business websites, tools, and automations that deliver results.
             </p>
 

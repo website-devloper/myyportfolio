@@ -1656,160 +1656,7 @@ section {
   }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
-}
 
-/* ------------------------- */
-/* CONTACT SECTION           */
-/* ------------------------- */
-.contact-input {
-  background: rgba(15, 23, 42, 0.6) !important;
-  border: 1px solid var(--glass-border) !important;
-  color: var(--text-main) !important;
-  padding: 12px 20px;
-  border-radius: var(--radius-sm);
-  transition: all 0.3s ease;
-}
-
-.contact-input:focus {
-  background: rgba(15, 23, 42, 0.8) !important;
-  border-color: var(--primary-color) !important;
-  box-shadow: 0 0 0 4px var(--primary-glow) !important;
-}
-
-.contact-input::placeholder {
-  color: var(--text-muted);
-}
-
-.contact-image-wrapper {
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-}
-
-/* ------------------------- */
-/* FOOTER SECTION            */
-/* ------------------------- */
-.footer {
-  background: var(--bg-darker);
-  padding: 80px 0 30px;
-  border-top: 1px solid var(--glass-border);
-}
-
-.footer-bg-glow {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(circle at 50% 100%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
-  pointer-events: none;
-}
-
-.footer-brand {
-  font-family: var(--font-heading);
-  letter-spacing: -1px;
-}
-
-.footer-link {
-  color: var(--text-muted);
-  font-weight: 500;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-
-
-/* ------------------------- */
-/* SKILLS SECTION            */
-/* ------------------------- */
-.transition-all {
-  transition: all 0.3s ease;
-}
-
-.skill-card-hover:hover {
-  transform: translateY(-10px);
-  background: rgba(15, 23, 42, 0.8);
-  border-color: var(--hover-color);
-  box-shadow: 0 10px 30px -10px var(--hover-color);
-}
-
-.skill-card-hover:hover .icon-box {
-  background: var(--hover-color) !important;
-  transform: scale(1.1);
-  box-shadow: 0 0 20px var(--hover-color);
-}
-
-.skill-card-hover:hover .icon-box i {
-  color: white !important;
-}
-
-.icon-box {
-  transition: all 0.3s ease;
-}
-
-/* ------------------------- */
-/* PROJECTS SECTION          */
-/* ------------------------- */
-.project-card:hover {
-  border-color: var(--primary-color);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px -10px var(--primary-glow);
-  transition: all 0.3s ease;
-}
-
-.project-card:hover .project-image-wrapper img {
-  transform: scale(1.1);
-}
-
-.project-card:hover .overlay {
-  opacity: 0.5 !important;
-}
-
-.project-card:hover .project-action {
-  opacity: 1 !important;
-  transform: translate(-50%, -50%) scale(1) !important;
-}
-
-.project-action {
-  transform: translate(-50%, -50%) scale(0.8);
-}
-
-.glass-badge {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-}
-
-/* ------------------------- */
-/* ABOUT SECTION             */
-/* ------------------------- */
-.about-card {
-  transition: all 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--hover-color);
-  box-shadow: 0 10px 30px -10px var(--hover-color);
-}
-
-/* ------------------------- */
-/* SERVICES SECTION          */
-/* ------------------------- */
-.service-card {
-  transition: all 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--hover-color);
-  box-shadow: 0 10px 30px -10px var(--hover-color);
-}
 
 /* ------------------------- */
 /* TESTIMONIALS SECTION      */
@@ -1996,4 +1843,374 @@ section {
 
 .pricing-features li.disabled i {
   color: var(--text-muted);
+
+  .service-card {
+    transition: all 0.3s ease;
+  }
+
+  .service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--hover-color);
+    box-shadow: 0 10px 30px -10px var(--hover-color);
+  }
+
+  /* ------------------------- */
+  /* TESTIMONIALS SECTION      */
+  /* ------------------------- */
+  .testimonial-card {
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+  }
+
+  .testimonial-card .quote-icon {
+    color: var(--primary-color);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+
+  .testimonial-card:hover .quote-icon {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* ------------------------- */
+  /* CONTACT SECTION           */
+  /* ------------------------- */
+  .contact-input {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: var(--text-main) !important;
+    padding: 12px 20px;
+    border-radius: var(--radius-sm);
+    transition: all 0.3s ease;
+  }
+
+  .contact-input:focus {
+    background: rgba(15, 23, 42, 0.8) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px var(--primary-glow) !important;
+  }
+
+  .contact-input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .contact-image-wrapper {
+    position: relative;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  /* ------------------------- */
+  /* FOOTER SECTION            */
+  /* ------------------------- */
+  .footer {
+    background: var(--bg-darker);
+    padding: 80px 0 30px;
+    border-top: 1px solid var(--glass-border);
+  }
+
+  .footer-bg-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 50% 100%, rgba(99, 102, 241, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  .footer-brand {
+    font-family: var(--font-heading);
+    letter-spacing: -1px;
+  }
+
+  .footer-link {
+    color: var(--text-muted);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .footer-link:hover {
+    color: var(--primary-color);
+  }
+
+  .footer-social-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    color: var(--text-muted);
+    font-size: 1.2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .footer-social-icon:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px var(--primary-glow);
+    border-color: var(--primary-color);
+  }
+
+  /* ------------------------- */
+  /* PRICING SECTION           */
+  /* ------------------------- */
+  .pricing-card {
+    transition: all 0.3s ease;
+    border: 1px solid var(--glass-border);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px -10px var(--primary-glow);
+  }
+
+  .pricing-card.popular {
+    border-color: var(--primary-color);
+    background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, var(--glass-bg) 100%);
+  }
+
+  .pricing-card .popular-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .pricing-price {
+    font-family: var(--font-heading);
+    color: var(--text-main);
+  }
+
+  .pricing-features li {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pricing-features li i {
+    color: var(--primary-color);
+    flex-shrink: 0;
+  }
+
+  .pricing-features li.disabled {
+    opacity: 0.5;
+    text-decoration: line-through;
+  }
+
+  .pricing-features li.disabled i {
+    color: var(--text-muted);
+  }
+}
+
+/* ------------------------- */
+/* WHY CHOOSE ME SECTION     */
+/* ------------------------- */
+.why-section {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-bg-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.why-bg-decoration .blob {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.1;
+}
+
+.why-bg-decoration .blob-1 {
+  background: #6366f1;
+  top: -10%;
+  left: -10%;
+}
+
+.why-bg-decoration .blob-2 {
+  background: #a855f7;
+  bottom: -10%;
+  right: -10%;
+}
+
+.why-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #a5b4fc;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(12px);
+}
+
+.text-gradient-why {
+  background: linear-gradient(to right, #818cf8, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-desc {
+  max-width: 650px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.why-card {
+  position: relative;
+  border-radius: 24px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-glow {
+  position: absolute;
+  inset: 0;
+  background: var(--card-gradient);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  filter: blur(24px);
+  border-radius: 24px;
+  z-index: -1;
+}
+
+.why-card:hover .card-glow {
+  opacity: 0.2;
+}
+
+.why-card-inner {
+  position: relative;
+  height: 100%;
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.why-card:hover .why-card-inner {
+  transform: translateY(-8px);
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.card-blob {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 128px;
+  height: 128px;
+  background: var(--card-gradient);
+  opacity: 0.2;
+  filter: blur(32px);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.why-card:hover .card-blob {
+  transform: scale(1.5);
+  opacity: 0.3;
+}
+
+.why-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--bg-accent);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 20px var(--card-shadow);
+}
+
+.why-card:hover .why-icon-wrapper {
+  transform: scale(1.1);
+}
+
+.why-icon-wrapper i {
+  font-size: 1.75rem;
+  color: var(--icon-color);
+}
+
+.why-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.card-border-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: var(--card-gradient);
+  transition: width 0.5s ease;
+}
+
+.why-card:hover .card-border-bottom {
+  width: 100%;
 }

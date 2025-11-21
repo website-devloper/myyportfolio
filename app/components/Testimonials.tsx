@@ -82,7 +82,7 @@ const Testimonials = () => {
                       <i key={i} className="bi bi-star-fill text-warning small me-1"></i>
                     ))}
                   </div>
-                  <p className="text-white-50 fst-italic mb-4 flex-grow-1">"{testimonial.text}"</p>
+                  <p className="text-white-100 fst-italic mb-4 flex-grow-1">"{testimonial.text}"</p>
                   <div className="mt-auto pt-3 border-top border-secondary border-opacity-25">
                     <h5 className="fw-bold mb-1 text-white">{testimonial.name}</h5>
                     <span className="d-block text-primary small text-uppercase fw-bold">{testimonial.role}</span>

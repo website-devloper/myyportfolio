@@ -46,7 +46,7 @@ const Projects = () => {
 
                   <div className="p-4">
                     <h5 className="text-white fw-bold mb-2">{project.title}</h5>
-                    <p className="text-white-50 small mb-3">{project.description}</p>
+                    <p className="text-white-100 small mb-3">{project.description}</p>
                     <div className="d-flex flex-wrap gap-2">
                       {project.tech.map((t, i) => (
                         <span className="badge glass-badge fw-normal text-white-50" key={i}>{t}</span>

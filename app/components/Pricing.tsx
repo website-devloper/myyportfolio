@@ -152,7 +152,7 @@ const Pricing = () => {
                 <div className="text-center mb-5">
                     <h3 className="section-subtitle">Transparent Pricing</h3>
                     <h2 className="section-title">Choose Your <span className="text-gradient">Package</span></h2>
-                    <p className="text-white mt-3" style={{ maxWidth: '600px', margin: '0 auto' }}>
+                    <p className="text-white-100 mt-3" style={{ maxWidth: '600px', margin: '0 auto' }}>
                         Whether you need a stunning website, a powerful IT solution, or intuitive design, I have the right package for you.
                     </p>
                 </div>
@@ -195,7 +195,7 @@ const Pricing = () => {
 
                                 <div className="mb-4">
                                     <h4 className="fw-bold text-white mb-2">{pkg.title}</h4>
-                                    <p className="text-white small mb-3">{pkg.description}</p>
+                                    <p className="text-white-100 small mb-3">{pkg.description}</p>
                                     <div className="pricing-price display-5 fw-bold mb-0">{pkg.price}</div>
                                 </div>
 

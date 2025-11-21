@@ -61,7 +61,7 @@ const Services = () => {
               >
                 <i className={`${service.icon} fs-2 mb-3 d-block`} style={{ color: service.color }}></i>
                 <h4 className="mb-3 fw-bold text-white">{service.title}</h4>
-                <p className="text-white-50 small mb-0">{service.description}</p>
+                <p className="text-white-100 small mb-0">{service.description}</p>
               </div>
             </div>
           ))}

@@ -27,7 +27,7 @@ const Skills = () => {
                   <i className={`bi ${skill.icon} fs-1`} style={{ color: skill.color }}></i>
                 </div>
                 <h4 className="text-white mb-3">{skill.title}</h4>
-                <p className="text-white-50 mb-0">{skill.description}</p>
+                <p className="text-white-100 mb-0">{skill.description}</p>
               </div>
             </div>
           ))}

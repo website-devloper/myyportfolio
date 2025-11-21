@@ -23,7 +23,7 @@ const Contact = () => {
                     {/* Form Column */}
                     <div className="col-lg-6">
                         <div className="glass-panel p-4 p-md-5">
-                            <p className="text-light mb-4">
+                            <p className="text-white-300 mb-4">
                                 Have a project in mind or just want to say hello? Feel free to reach out!
                                 I'm always open to discussing new ideas and opportunities.
                             </p>
