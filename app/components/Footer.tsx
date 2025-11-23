@@ -32,8 +32,8 @@ const Footer = () => {
 
             <div className="mb-5 d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
               {[
-                { icon: 'bi-github', url: '#' },
-                { icon: 'bi-linkedin', url: '#' },
+                { icon: 'bi-github', url: 'https://github.com/website-devloper' },
+                { icon: 'bi-linkedin', url: 'https://www.linkedin.com/in/fatima-zahra-sabbar-906b40195/' },
                 { icon: 'bi-twitter', url: '#' },
                 { icon: 'bi-envelope', url: 'mailto:fatimazahra20033@gmail.com' }
               ].map((social, index) => (
@@ -58,7 +58,7 @@ const Footer = () => {
               <div className="row align-items-center justify-content-between">
                 <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
                   <p className="mb-0 text-white-100 small opacity-50">
-                    &copy; {new Date().getFullYear()} <span className="text-white fw-bold opacity-100">WevTex</span>. All Rights Reserved.
+                    &copy; {new Date().getFullYear()} <span className="text-white fw-bold opacity-100">FZ.Dev</span>. All Rights Reserved.
                   </p>
                 </div>
                 <div className="col-md-6 text-center text-md-end">

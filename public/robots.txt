@@ -1,0 +1,21 @@
+# robots.txt
+# This file tells search engine crawlers which pages or files they can or can't request from your site
+
+# Allow all crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourportfolio.com/sitemap.xml
+
+# Disallow crawling of API routes and private directories (if any)
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /*.json$
+
+# Crawl-delay for specific bots to prevent server overload (optional)
+# User-agent: Googlebot
+# Crawl-delay: 0
+
+# User-agent: Bingbot
+# Crawl-delay: 1

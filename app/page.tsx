@@ -29,6 +29,40 @@ export default function Home() {
     <html lang="en">
       <body>
         <div>
+          {/* JSON-LD Structured Data for SEO */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Your Name",
+                "url": "https://yourportfolio.com",
+                "image": "https://yourportfolio.com/photome1.png",
+                "sameAs": [
+                  "https://twitter.com/yourusername",
+                  "https://github.com/yourusername",
+                  "https://linkedin.com/in/yourusername"
+                ],
+                "jobTitle": "Full Stack Developer",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "Freelance"
+                },
+                "description": "Professional Full Stack Developer specializing in modern web development, IT services, WordPress development, and automation workflows.",
+                "knowsAbout": [
+                  "Web Development",
+                  "Full Stack Development",
+                  "React",
+                  "Next.js",
+                  "WordPress",
+                  "IT Solutions",
+                  "Automation",
+                  "UI/UX Design"
+                ]
+              })
+            }}
+          />
           <Navbar />
           <main>
             <div id="home">

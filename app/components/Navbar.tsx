@@ -75,10 +75,10 @@ const Navbar = () => {
           </ul>
 
           <div className="d-flex align-items-center gap-3 ms-lg-4 mt-3 mt-lg-0">
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="GitHub">
+            <a href="https://github.com/website-devloper" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="GitHub">
               <i className="bi bi-github fs-5"></i>
             </a>
-            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/fatima-zahra-sabbar-906b40195/" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="LinkedIn">
               <i className="bi bi-linkedin fs-5"></i>
             </a>
           </div>
