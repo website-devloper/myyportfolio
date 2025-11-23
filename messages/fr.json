@@ -1,0 +1,119 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À Propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "services": "Services",
+        "testimonials": "Témoignages",
+        "contact": "Contact"
+    },
+    "hero": {
+        "badge": "Disponible pour des Projets Passionnants",
+        "title": "Transformer les Idées en",
+        "titleGradient": "Réalité Numérique",
+        "typeAnimation": {
+            "1": "Développeuse Full Stack",
+            "2": "Experte React & Next.js",
+            "3": "Architecte Solutions IA",
+            "4": "Spécialiste WordPress",
+            "5": "Ingénieure Cloud",
+            "6": "Designer UI/UX"
+        },
+        "description": "Je crée des solutions numériques élégantes et performantes qui stimulent la croissance et dépassent les attentes. Des sites web élégants aux systèmes d'automation intelligents—je construis ce que vous envisagez.",
+        "cta": {
+            "primary": "Voir Mon Travail",
+            "secondary": "Me Contacter"
+        },
+        "features": {
+            "1": "Pixel Parfait",
+            "2": "Performance Optimisée",
+            "3": "Prêt pour le SEO"
+        }
+    },
+    "about": {
+        "subtitle": "À Propos de Moi",
+        "title": "Qui Je",
+        "titleGradient": "Suis",
+        "intro": "Bonjour ! Je suis <strong>Fatima Zahra Sabbar</strong>, une <strong>Développeuse Full Stack</strong> passionnée et <strong>Spécialiste en Solutions IT</strong> dédiée à transformer les défis complexes en solutions numériques élégantes et efficaces.",
+        "description": "Avec plus de 3 ans d'expérience pratique, je me spécialise dans la création d'applications web modernes, sécurisées et évolutives qui génèrent une véritable valeur commerciale. Mon expertise s'étend de la création d'interfaces utilisateur au pixel près à l'architecture de systèmes backend robustes et à la mise en œuvre de flux d'automatisation intelligents. Je ne me contente pas d'écrire du code—je livre des solutions qui ont un impact tangible sur la croissance et l'efficacité de votre entreprise.",
+        "stats": {
+            "experience": "Ans d'Exp.",
+            "projects": "Projets",
+            "satisfaction": "Satisfaction"
+        },
+        "cards": {
+            "fullstack": {
+                "title": "Développement Full Stack",
+                "description": "Je construis des solutions web complètes en utilisant des technologies de pointe comme React, Next.js et Node.js pour créer des applications rapides et évolutives."
+            },
+            "ai": {
+                "title": "IA & Automatisation",
+                "description": "J'exploite l'IA et l'automatisation personnalisée pour rationaliser les flux de travail, éliminer les tâches répétitives et augmenter considérablement la productivité."
+            },
+            "wordpress": {
+                "title": "WordPress & CMS",
+                "description": "Je crée de beaux sites WordPress conviviaux avec des thèmes et plugins personnalisés qui correspondent parfaitement à l'identité de votre marque."
+            },
+            "it": {
+                "title": "Conseil IT",
+                "description": "Je fournis des consultations IT expertes et mets en œuvre des solutions d'infrastructure sécurisées et évolutives adaptées à vos besoins professionnels."
+            }
+        }
+    },
+    "services": {
+        "subtitle": "Ce Que J'Offre",
+        "title": "Services",
+        "titleGradient": "Personnels",
+        "items": {
+            "webdev": {
+                "title": "Développement Web & Applications",
+                "description": "Création de sites web et d'applications responsives et performants, adaptés à vos besoins personnels ou professionnels."
+            },
+            "automation": {
+                "title": "Solutions IT & Automatisation",
+                "description": "Création de scripts personnalisés et de flux de travail alimentés par l'IA pour automatiser les tâches répétitives et augmenter votre efficacité."
+            },
+            "uiux": {
+                "title": "Design UI/UX",
+                "description": "Conception d'interfaces intuitives et conviviales avec une esthétique propre et moderne pour vos projets numériques."
+            },
+            "mobile": {
+                "title": "Développement d'Applications Mobiles",
+                "description": "Création d'applications mobiles multiplateformes offrant des expériences utilisateur fluides sur iOS et Android."
+            },
+            "seo": {
+                "title": "SEO & Marketing Digital",
+                "description": "Optimisation de votre présence en ligne pour générer du trafic, améliorer le classement et développer votre portée commerciale."
+            },
+            "cloud": {
+                "title": "Solutions Cloud",
+                "description": "Déploiement et gestion d'une infrastructure cloud sécurisée et évolutive pour soutenir vos applications en croissance."
+            }
+        }
+    },
+    "whyChooseMe": {
+        "subtitle": "Ma Proposition de Valeur",
+        "title": "Pourquoi Travailler",
+        "titleGradient": "Avec Moi ?",
+        "description": "Je ne livre pas que du code—je livre des résultats. Lorsque vous travaillez avec moi, vous obtenez un partenaire dévoué qui est véritablement investi dans votre succès et engagé à donner vie à votre vision numérique.",
+        "reasons": {
+            "innovative": {
+                "title": "Pensée Innovante",
+                "description": "J'aborde chaque projet avec des perspectives nouvelles et une résolution de problèmes créative, transformant votre vision en réalité avec des solutions de pointe qui se démarquent."
+            },
+            "reliable": {
+                "title": "Fiable & Ponctuel",
+                "description": "Votre temps est précieux. Je suis fière de livrer une qualité exceptionnelle dans les délais convenus, en vous tenant informé à chaque étape."
+            },
+            "excellence": {
+                "title": "Axée sur l'Excellence",
+                "description": "Je m'engage à ne rien livrer de moins qu'exceptionnel. En utilisant les dernières technologies et les meilleures pratiques, je construis des solutions robustes, évolutives et maintenables."
+            },
+            "partnership": {
+                "title": "Partenariat Continu",
+                "description": "Ma relation avec les clients ne se termine pas au lancement. Je fournis un support et une maintenance continus pour garantir que votre projet prospère à long terme."
+            }
+        }
+    }
+}

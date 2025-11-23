@@ -1,0 +1,119 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "services": "Services",
+        "testimonials": "Testimonials",
+        "contact": "Contact"
+    },
+    "hero": {
+        "badge": "Open to Exciting Projects",
+        "title": "Transforming Ideas Into",
+        "titleGradient": "Digital Reality",
+        "typeAnimation": {
+            "1": "Full Stack Developer",
+            "2": "React & Next.js Expert",
+            "3": "AI Solutions Architect",
+            "4": "WordPress Specialist",
+            "5": "Cloud Solutions Engineer",
+            "6": "UI/UX Designer"
+        },
+        "description": "I craft elegant, high-performance digital solutions that drive growth and exceed expectations. From sleek websites to intelligent automation systems—I build what you envision.",
+        "cta": {
+            "primary": "View My Work",
+            "secondary": "Contact Me"
+        },
+        "features": {
+            "1": "Pixel Perfect",
+            "2": "Performance Optimized",
+            "3": "SEO Ready"
+        }
+    },
+    "about": {
+        "subtitle": "About Me",
+        "title": "Who I",
+        "titleGradient": "Am",
+        "intro": "Hi! I'm <strong>Fatima Zahra Sabbar</strong>, a passionate <strong>Full Stack Developer</strong> and <strong>IT Solutions Specialist</strong> dedicated to transforming complex challenges into elegant, efficient digital solutions.",
+        "description": "With over 3 years of hands-on experience, I specialize in creating modern, secure, and scalable web applications that drive real business value. My expertise spans from crafting pixel-perfect user interfaces to architecting robust backend systems and implementing intelligent automation workflows. I'm not just about writing code—I'm about delivering solutions that make a tangible impact on your business growth and efficiency.",
+        "stats": {
+            "experience": "Years Exp.",
+            "projects": "Projects",
+            "satisfaction": "Satisfaction"
+        },
+        "cards": {
+            "fullstack": {
+                "title": "Full Stack Development",
+                "description": "I build end-to-end web solutions using cutting-edge technologies like React, Next.js, and Node.js to create fast, scalable applications."
+            },
+            "ai": {
+                "title": "AI & Automation",
+                "description": "I leverage AI and custom automation to streamline workflows, eliminate repetitive tasks, and boost productivity dramatically."
+            },
+            "wordpress": {
+                "title": "WordPress & CMS",
+                "description": "I create beautiful, user-friendly WordPress sites with custom themes and plugins that perfectly match your brand identity."
+            },
+            "it": {
+                "title": "IT Consulting",
+                "description": "I provide expert IT consultation and implement secure, scalable infrastructure solutions tailored to your business needs."
+            }
+        }
+    },
+    "services": {
+        "subtitle": "What I Offer",
+        "title": "Personal",
+        "titleGradient": "Services",
+        "items": {
+            "webdev": {
+                "title": "Website & Web App Development",
+                "description": "Creating responsive, high-performance websites and applications tailored to your personal or business needs."
+            },
+            "automation": {
+                "title": "IT & Automation Solutions",
+                "description": "Building custom scripts and AI-powered workflows to automate repetitive tasks and boost your efficiency."
+            },
+            "uiux": {
+                "title": "UI/UX Design",
+                "description": "Designing intuitive, user-friendly interfaces with a clean and modern aesthetic for your digital projects."
+            },
+            "mobile": {
+                "title": "Mobile App Development",
+                "description": "Building cross-platform mobile applications that provide seamless user experiences on iOS and Android."
+            },
+            "seo": {
+                "title": "SEO & Digital Marketing",
+                "description": "Optimizing your online presence to drive traffic, improve rankings, and grow your business reach."
+            },
+            "cloud": {
+                "title": "Cloud Solutions",
+                "description": "Deploying and managing secure, scalable cloud infrastructure to support your growing applications."
+            }
+        }
+    },
+    "whyChooseMe": {
+        "subtitle": "My Value Proposition",
+        "title": "Why Work",
+        "titleGradient": "With Me?",
+        "description": "I don't just deliver code—I deliver results. When you work with me, you get a dedicated partner who's genuinely invested in your success and committed to bringing your digital vision to life.",
+        "reasons": {
+            "innovative": {
+                "title": "Innovative Thinking",
+                "description": "I approach every project with fresh perspectives and creative problem-solving, turning your vision into reality with cutting-edge solutions that stand out."
+            },
+            "reliable": {
+                "title": "Reliable & On-Time",
+                "description": "Your time is valuable. I pride myself on delivering exceptional quality within agreed deadlines, keeping you informed every step of the way."
+            },
+            "excellence": {
+                "title": "Excellence-Driven",
+                "description": "I'm committed to delivering nothing less than exceptional. Using the latest technologies and best practices, I build robust, scalable, and maintainable solutions."
+            },
+            "partnership": {
+                "title": "Ongoing Partnership",
+                "description": "My relationship with clients doesn't end at launch. I provide continuous support and maintenance to ensure your project thrives long-term."
+            }
+        }
+    }
+}

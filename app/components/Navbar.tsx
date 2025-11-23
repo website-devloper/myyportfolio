@@ -2,6 +2,7 @@
 'use client';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -119,6 +120,9 @@ const Navbar = () => {
             >
               <i className="bi bi-linkedin fs-5"></i>
             </a>
+
+            {/* Language Switcher */}
+            <LanguageSwitcher />
           </div>
         </div>
       </div>
@@ -127,4 +131,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
