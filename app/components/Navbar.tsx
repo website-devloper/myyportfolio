@@ -39,7 +39,13 @@ const Navbar = () => {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
       <div className="container mx-auto flex items-center justify-between p-4">
-        <Link href="#home" className="navbar-brand">
+        <Link
+          href="#home"
+          className="navbar-brand"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-delay="100"
+        >
           FZ.Dev
         </Link>
 
@@ -51,6 +57,9 @@ const Navbar = () => {
           data-bs-target="#navbarNav"
           aria-expanded={isOpen ? 'true' : 'false'}
           aria-label="Toggle navigation"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="100"
         >
           <span>
             <i className={`bi ${isOpen ? 'bi-x' : 'bi-list'}`}></i>
@@ -59,8 +68,14 @@ const Navbar = () => {
 
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            {navItems.map((item) => (
-              <li className="nav-item" key={item}>
+            {navItems.map((item, index) => (
+              <li
+                className="nav-item"
+                key={item}
+                data-aos="fade-down"
+                data-aos-duration="600"
+                data-aos-delay={100 + (index * 50)}
+              >
                 <Link
                   href={`#${item.toLowerCase()}`}
                   className={`nav-link ${activeSection === item.toLowerCase() ? 'active' : ''} d-inline-block`}
@@ -74,11 +89,34 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className="d-flex align-items-center gap-3 ms-lg-4 mt-3 mt-lg-0">
-            <a href="https://github.com/website-devloper" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="GitHub">
+          <div
+            className="d-flex align-items-center gap-3 ms-lg-4 mt-3 mt-lg-0"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="500"
+          >
+            <a
+              href="https://github.com/website-devloper"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link p-0"
+              aria-label="GitHub"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="600"
+            >
               <i className="bi bi-github fs-5"></i>
             </a>
-            <a href="https://www.linkedin.com/in/fatima-zahra-sabbar-906b40195/" target="_blank" rel="noopener noreferrer" className="nav-link p-0" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/fatima-zahra-sabbar-906b40195/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="nav-link p-0"
+              aria-label="LinkedIn"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+              data-aos-delay="700"
+            >
               <i className="bi bi-linkedin fs-5"></i>
             </a>
           </div>

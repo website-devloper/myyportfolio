@@ -5,8 +5,8 @@ import React from 'react';
 const aboutCards = [
   {
     icon: "bi-code-square",
-    title: "Full Stack",
-    description: "Developing custom, high-performance web applications tailored to your business needs.",
+    title: "Full Stack Development",
+    description: "I build end-to-end web solutions using cutting-edge technologies like React, Next.js, and Node.js to create fast, scalable applications.",
     color: "linear-gradient(135deg, #6366f1, #8b5cf6)", // Indigo
     shadow: "rgba(99, 102, 241, 0.2)",
     iconColor: "#818cf8",
@@ -14,8 +14,8 @@ const aboutCards = [
   },
   {
     icon: "bi-robot",
-    title: "AI Automation",
-    description: "Automating repetitive tasks and workflows to increase efficiency and reduce costs.",
+    title: "AI & Automation",
+    description: "I leverage AI and custom automation to streamline workflows, eliminate repetitive tasks, and boost productivity dramatically.",
     color: "linear-gradient(135deg, #f43f5e, #ec4899)", // Pink
     shadow: "rgba(244, 63, 94, 0.2)",
     iconColor: "#fb7185",
@@ -23,8 +23,8 @@ const aboutCards = [
   },
   {
     icon: "bi-palette",
-    title: "WordPress",
-    description: "Designing modern, intuitive interfaces that provide an exceptional user experience.",
+    title: "WordPress & CMS",
+    description: "I create beautiful, user-friendly WordPress sites with custom themes and plugins that perfectly match your brand identity.",
     color: "linear-gradient(135deg, #06b6d4, #3b82f6)", // Cyan
     shadow: "rgba(6, 182, 212, 0.2)",
     iconColor: "#22d3ee",
@@ -32,8 +32,8 @@ const aboutCards = [
   },
   {
     icon: "bi-shield-check",
-    title: "IT Solutions",
-    description: "Providing secure, scalable IT infrastructure and technical support solutions.",
+    title: "IT Consulting",
+    description: "I provide expert IT consultation and implement secure, scalable infrastructure solutions tailored to your business needs.",
     color: "linear-gradient(135deg, #10b981, #14b8a6)", // Emerald
     shadow: "rgba(16, 185, 129, 0.2)",
     iconColor: "#34d399",
@@ -60,14 +60,10 @@ const About = () => {
           <div className="col-lg-6" data-aos="fade-right">
             <div className="pe-lg-5">
               <p className="lead text-white mb-4">
-                I am the <span className="text-primary fw-bold"> Co-Founder </span>of <span className="text-primary fw-bold">WevTex </span>, a Full Stack Developer and IT Solutions Specialist
-                dedicated to building modern,
-                secure, and scalable digital experiences for businesses.
-
-                I help companies grow by developing websites, automating processes, and designing interfaces that are simple, powerful, and user-friendly.
+                Hi! I'm <span className="text-primary fw-bold">Fatima Zahra Sabbar</span>, a passionate <span className="text-primary fw-bold">Full Stack Developer</span> and <span className="text-primary fw-bold">IT Solutions Specialist</span> dedicated to transforming complex challenges into elegant, efficient digital solutions.
               </p>
               <p className="text-white-1000 mb-4">
-                My mission is to deliver clean and efficient solutions that solve real problems whether it’s a custom web application, a business website, an AI-powered automated workflow, or a complete digital system built from scratch.
+                With over 3 years of hands-on experience, I specialize in creating modern, secure, and scalable web applications that drive real business value. My expertise spans from crafting pixel-perfect user interfaces to architecting robust backend systems and implementing intelligent automation workflows. I'm not just about writing code—I'm about delivering solutions that make a tangible impact on your business growth and efficiency.
               </p>
 
               <div className="d-flex gap-4 mt-5">

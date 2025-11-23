@@ -86,7 +86,7 @@ const Services = () => {
                 <div className="why-card-inner">
                   <div className="card-blob"></div>
                   <div className="why-icon-wrapper">
-                    <i className={`bi ${ service.icon } `}></i>
+                    <i className={`bi ${service.icon} `}></i>
                   </div>
                   <h3 className="why-card-title">{service.title}</h3>
                   <p className="why-card-desc">{service.description}</p>

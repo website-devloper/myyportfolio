@@ -4,8 +4,8 @@ import React from 'react';
 const reasons = [
     {
         icon: "bi-lightbulb",
-        title: "Creative Solutions",
-        description: "I bring fresh perspectives and innovative ideas to every project, ensuring your website stands out.",
+        title: "Innovative Thinking",
+        description: "I approach every project with fresh perspectives and creative problem-solving, turning your vision into reality with cutting-edge solutions that stand out.",
         color: "linear-gradient(135deg, #6366f1, #8b5cf6)", // Indigo to Violet
         shadow: "rgba(99, 102, 241, 0.2)",
         iconColor: "#818cf8",
@@ -13,8 +13,8 @@ const reasons = [
     },
     {
         icon: "bi-clock-history",
-        title: "Timely Delivery",
-        description: "I value your time. You can count on me to deliver high-quality work within the agreed deadlines.",
+        title: "Reliable & On-Time",
+        description: "Your time is valuable. I pride myself on delivering exceptional quality within agreed deadlines, keeping you informed every step of the way.",
         color: "linear-gradient(135deg, #f43f5e, #ec4899)", // Rose to Pink
         shadow: "rgba(244, 63, 94, 0.2)",
         iconColor: "#fb7185",
@@ -22,8 +22,8 @@ const reasons = [
     },
     {
         icon: "bi-gem",
-        title: "High Quality",
-        description: "I am committed to excellence, using the latest technologies to build robust, scalable applications.",
+        title: "Excellence-Driven",
+        description: "I'm committed to delivering nothing less than exceptional. Using the latest technologies and best practices, I build robust, scalable, and maintainable solutions.",
         color: "linear-gradient(135deg, #06b6d4, #3b82f6)", // Cyan to Blue
         shadow: "rgba(6, 182, 212, 0.2)",
         iconColor: "#22d3ee",
@@ -31,8 +31,8 @@ const reasons = [
     },
     {
         icon: "bi-headset",
-        title: "24/7 Support",
-        description: "I provide ongoing support and maintenance to ensure your website runs smoothly at all times.",
+        title: "Ongoing Partnership",
+        description: "My relationship with clients doesn't end at launch. I provide continuous support and maintenance to ensure your project thrives long-term.",
         color: "linear-gradient(135deg, #10b981, #14b8a6)", // Emerald to Teal
         shadow: "rgba(16, 185, 129, 0.2)",
         iconColor: "#34d399",
@@ -55,10 +55,10 @@ const WhyChooseMe = () => {
                         My Value Proposition
                     </span>
                     <h2 className="section-title mb-4">
-                        Why Choose <span className="text-gradient">Me?</span>
+                        Why Work <span className="text-gradient">With Me?</span>
                     </h2>
                     <p className="text-white-100 mx-auto section-desc">
-                        I deliver more than just code. I provide a partnership focused on your success, combining technical expertise with creative vision.
+                        I don't just deliver code—I deliver results. When you work with me, you get a dedicated partner who's genuinely invested in your success and committed to bringing your digital vision to life.
                     </p>
                 </div>
 
