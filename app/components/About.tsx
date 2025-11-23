@@ -2,7 +2,6 @@
 const About = () => {
   return (
     <section id="about" className="about-section position-relative overflow-hidden">
-      {/* Background Elements */}
       <div className="hero-bg-glow" style={{ top: '50%', left: '-20%', width: '800px', height: '800px', opacity: '0.1' }}></div>
 
       <div className="container position-relative z-1">
@@ -15,20 +14,24 @@ const About = () => {
           <div className="col-lg-6">
             <div className="pe-lg-5">
               <p className="lead text-white mb-4">
-                I am <span className="text-primary fw-bold">WevTex</span>, a Full Stack Developer and IT Solutions Builder passionate about creating <span className="text-white">modern, efficient, and scalable</span> digital solutions.
+                I am the <span className="text-primary fw-bold"> Co-Founder </span>of <span className="text-primary fw-bold">WevTex </span>, a Full Stack Developer and IT Solutions Specialist 
+                dedicated to building modern, 
+                secure, and scalable digital experiences for businesses.
+
+                I help companies grow by developing websites, automating processes, and designing interfaces that are simple, powerful, and user-friendly.
               </p>
               <p className="text-white-1000 mb-4">
-                My mission is to createmodern, secure, and scalable digital solutions that help businesses grow. Whether it's developing a web application, automating a workflow with AI, or designing a user-friendly interface, I am dedicated to delivering high-quality results.
+               My mission is to deliver clean and efficient solutions that solve real problems whether it’s a custom web application, a business website, an AI-powered automated workflow, or a complete digital system built from scratch.
               </p>
 
               <div className="d-flex gap-4 mt-5">
                 <div>
-                  <h2 className="fw-bold text-gradient mb-0">5+</h2>
+                  <h2 className="fw-bold text-gradient mb-0">3+</h2>
                   <p className="small text-white-1000">Years Exp.</p>
                 </div>
                 <div className="vr bg-secondary opacity-25"></div>
                 <div>
-                  <h2 className="fw-bold text-gradient mb-0">50+</h2>
+                  <h2 className="fw-bold text-gradient mb-0">30+</h2>
                   <p className="small text-white-1000">Projects</p>
                 </div>
                 <div className="vr bg-secondary opacity-25"></div>
@@ -59,7 +62,7 @@ const About = () => {
               <div className="col-md-6 mt-md-n5">
                 <div className="glass-panel p-4 h-100 about-card" style={{ '--hover-color': 'var(--accent-cyan)' } as React.CSSProperties}>
                   <i className="bi bi-palette fs-2 mb-3 d-block" style={{ color: 'var(--accent-cyan)' }}></i>
-                  <h5 className="text-white mb-2">UI/UX Design</h5>
+                  <h5 className="text-white mb-2">WordPress Development</h5>
                   <p className="text-white-100 small mb-0">Designing modern, intuitive interfaces that provide an exceptional user experience.</p>
                 </div>
               </div>

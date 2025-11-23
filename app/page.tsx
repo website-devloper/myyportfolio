@@ -39,9 +39,9 @@ export default function Home() {
             <div id="why-choose-me">
               <WhyChooseMe />
             </div>
-            <div id="pricing">
+            {/* <div id="pricing">
               <Pricing />
-            </div>
+            </div> */}
             <div id="testimonials">
               <Testimonials />
             </div>
