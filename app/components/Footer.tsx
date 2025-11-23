@@ -3,14 +3,12 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const Footer = () => {
   return (
     <footer className="footer position-relative overflow-hidden py-5">
-      {/* Background Glow Effects */}
       <div className="hero-bg-glow" style={{ bottom: '-20%', left: '50%', transform: 'translateX(-50%)', width: '1200px', height: '500px', opacity: '0.15' }}></div>
 
       <div className="container position-relative z-1">
         <div className="row justify-content-center text-center">
           <div className="col-lg-10">
 
-            {/* Brand Logo & Tagline */}
             <div className="mb-5" data-aos="fade-up">
               <a href="#" className="footer-brand text-gradient display-4 text-decoration-none fw-bold d-inline-block mb-3">WevTex</a>
               <p className="text-white-100 lead mx-auto opacity-75" style={{ maxWidth: '600px' }}>
@@ -18,7 +16,6 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* Navigation - Floating Dock Style */}
             <div className="mb-5 d-inline-block" data-aos="fade-up" data-aos-delay="100">
               <div className="glass-panel px-4 py-3 rounded-pill d-flex flex-wrap justify-content-center gap-4 border-white border-opacity-10">
                 {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item, index) => (
@@ -33,7 +30,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Social Icons - Glowing */}
             <div className="mb-5 d-flex justify-content-center gap-3" data-aos="fade-up" data-aos-delay="200">
               {[
                 { icon: 'bi-github', url: '#' },
@@ -58,7 +54,6 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* Copyright & Legal */}
             <div className="border-top border-white border-opacity-10 pt-4 mt-4" data-aos="fade-up" data-aos-delay="300">
               <div className="row align-items-center justify-content-between">
                 <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
