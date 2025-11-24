@@ -104,6 +104,10 @@ export default function AdminDashboard() {
                                 <i className="bi bi-envelope me-2"></i>
                                 Contacts
                             </Link>
+                            <Link href="/admin/projects" className="btn btn-outline-primary">
+                                <i className="bi bi-kanban me-2"></i>
+                                Projects
+                            </Link>
                             <Link href="/admin/posts/new" className="btn btn-primary">
                                 <i className="bi bi-plus-circle me-2"></i>
                                 New Post
