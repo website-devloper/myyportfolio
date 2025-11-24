@@ -68,13 +68,10 @@ const Testimonials = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setItemsPerPage(1);
-      } else if (window.innerWidth < 992) {
-        setItemsPerPage(2);
-      } else {
-        setItemsPerPage(3);
-      }
+      const newItemsPerPage = window.innerWidth < 768 ? 1 : window.innerWidth < 992 ? 2 : 3;
+      setItemsPerPage(newItemsPerPage);
+      // Reset index when items per page changes
+      setActiveIndex(0);
     };
 
     // Initial call
@@ -96,13 +93,10 @@ const Testimonials = () => {
 
   // Auto-play
   useEffect(() => {
-    const interval = setInterval(nextSlide, 5000);
+    const interval = setInterval(() => {
+      setActiveIndex((prev) => (prev + 1) % Math.ceil(testimonialsData.length / itemsPerPage));
+    }, 5000);
     return () => clearInterval(interval);
-  }, [itemsPerPage]); // Reset timer if layout changes
-
-  // Reset active index if itemsPerPage changes to avoid out of bounds
-  useEffect(() => {
-    setActiveIndex(0);
   }, [itemsPerPage]);
 
   const currentItems = testimonialsData.slice(
@@ -148,7 +142,7 @@ const Testimonials = () => {
                       ))}
                     </div>
 
-                    <p className="why-card-desc fst-italic mb-4 flex-grow-1">"{testimonial.text}"</p>
+                    <p className="why-card-desc fst-italic mb-4 flex-grow-1">&ldquo;{testimonial.text}&rdquo;</p>
 
                     <div className="mt-auto pt-3 border-top border-secondary border-opacity-25">
                       <h5 className="why-card-title h5 mb-1">{testimonial.name}</h5>

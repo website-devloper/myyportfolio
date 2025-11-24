@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
         const status = searchParams.get('status');
         const limit = searchParams.get('limit');
 
-        let query: any = {};
+        const query: Record<string, string> = {};
 
         if (status && status !== 'all') {
             query.status = status;

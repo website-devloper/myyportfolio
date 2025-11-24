@@ -21,7 +21,7 @@ export async function GET(request: NextRequest) {
         const limit = searchParams.get('limit');
         const publishedParam = searchParams.get('published');
 
-        let query: any = {};
+        const query: Record<string, string | boolean> = {};
 
         if (publishedParam !== 'all') {
             query.published = publishedParam !== 'false';

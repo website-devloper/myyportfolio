@@ -27,7 +27,7 @@ const Contact = () => {
 
         try {
             // Send to both FormSubmit (Email) and Database concurrently
-            const [emailResponse, dbResponse] = await Promise.all([
+            const [emailResponse] = await Promise.all([
                 fetch('https://formsubmit.co/ajax/fatimazahra20033@gmail.com', {
                     method: 'POST',
                     headers: {
@@ -178,7 +178,7 @@ const Contact = () => {
                                     {submitStatus === 'success' && (
                                         <div className="alert alert-success mb-4" role="alert">
                                             <i className="bi bi-check-circle me-2"></i>
-                                            Message sent successfully! We'll get back to you soon.
+                                            Message sent successfully! We&apos;ll get back to you soon.
                                         </div>
                                     )}
                                     {submitStatus === 'error' && (
