@@ -5,6 +5,15 @@ import BlogPost from '@/models/BlogPost';
 // GET all blog posts
 export async function GET(request: NextRequest) {
     try {
+        // Check if MongoDB is configured
+        if (!process.env.MONGODB_URI) {
+            return NextResponse.json({
+                success: true,
+                error: 'Database not configured yet. Please check BLOG_SETUP.md',
+                data: []
+            });
+        }
+
         await dbConnect();
 
         const { searchParams } = new URL(request.url);
@@ -14,7 +23,6 @@ export async function GET(request: NextRequest) {
 
         let query: any = {};
 
-        // If published param is not 'all', filter by published status
         if (publishedParam !== 'all') {
             query.published = publishedParam !== 'false';
         }
@@ -36,12 +44,14 @@ export async function GET(request: NextRequest) {
             data: result,
         });
     } catch (error) {
+        console.error('Blog API Error:', error);
         return NextResponse.json(
             {
-                success: false,
+                success: true,
                 error: error instanceof Error ? error.message : 'Failed to fetch posts',
+                data: []
             },
-            { status: 400 }
+            { status: 200 }
         );
     }
 }
@@ -49,6 +59,16 @@ export async function GET(request: NextRequest) {
 // POST create a new blog post
 export async function POST(request: NextRequest) {
     try {
+        if (!process.env.MONGODB_URI) {
+            return NextResponse.json(
+                {
+                    success: false,
+                    error: 'Database not configured',
+                },
+                { status: 500 }
+            );
+        }
+
         await dbConnect();
 
         const body = await request.json();

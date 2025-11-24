@@ -26,23 +26,19 @@ const Contact = () => {
         setSubmitStatus('idle');
 
         try {
-            // Save to database
-            const dbResponse = await fetch('/api/contacts', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    ...formData,
-                    status: 'new'
-                }),
-            });
-
-            if (!dbResponse.ok) {
-                throw new Error('Failed to save contact');
+            // Try to save to database (optional - will work once MongoDB is configured)
+            try {
+                await fetch('/api/contacts', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ ...formData, status: 'new' }),
+                });
+            } catch (dbError) {
+                // Database save failed, but continue with email
+                console.log('Database not configured yet - email will still be sent');
             }
 
-            // Send email using FormSubmit
+            // Send email using FormSubmit (this always works)
             const formElement = e.currentTarget;
             const formSubmitData = new FormData(formElement);
 
@@ -53,8 +49,6 @@ const Contact = () => {
 
             setSubmitStatus('success');
             setFormData({ name: '', email: '', subject: '', message: '' });
-
-            // Reset success message after 5 seconds
             setTimeout(() => setSubmitStatus('idle'), 5000);
         } catch (error) {
             console.error('Error submitting form:', error);
