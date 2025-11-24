@@ -14,10 +14,12 @@ const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
 
 export function LocaleProvider({ children }: { children: ReactNode }) {
     const [locale, setLocaleState] = useState<Locale>('en');
-    const [messages, setMessages] = useState<any>({});
+    const [messages, setMessages] = useState<Record<string, any>>({});
+    const [mounted, setMounted] = useState(false);
 
     useEffect(() => {
-        // Load saved locale from localStorage
+        setMounted(true);
+        // Load saved locale from localStorage only on client side
         const saved = localStorage.getItem('preferredLocale') as Locale;
         if (saved && (saved === 'en' || saved === 'fr')) {
             setLocaleState(saved);
@@ -33,7 +35,9 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
 
     const setLocale = (newLocale: Locale) => {
         setLocaleState(newLocale);
-        localStorage.setItem('preferredLocale', newLocale);
+        if (mounted) {
+            localStorage.setItem('preferredLocale', newLocale);
+        }
     };
 
     const t = (key: string): string => {
