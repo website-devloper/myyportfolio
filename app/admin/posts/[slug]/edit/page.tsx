@@ -64,6 +64,38 @@ export default function EditPost({ params }: EditPostProps) {
         }
     };
 
+    const [uploading, setUploading] = useState(false);
+
+    const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+        if (!e.target.files || e.target.files.length === 0) return;
+
+        const file = e.target.files[0];
+        const formData = new FormData();
+        formData.append('file', file);
+
+        setUploading(true);
+
+        try {
+            const response = await fetch('/api/upload', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await response.json();
+
+            if (data.success) {
+                setFormData(prev => ({ ...prev, image: data.url }));
+            } else {
+                alert('Failed to upload image: ' + data.error);
+            }
+        } catch (error) {
+            console.error('Error uploading image:', error);
+            alert('Failed to upload image');
+        } finally {
+            setUploading(false);
+        }
+    };
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setSaving(true);
@@ -209,15 +241,45 @@ export default function EditPost({ params }: EditPostProps) {
                                 </div>
 
                                 <div className="mb-4">
-                                    <label className="form-label text-white-80">Featured Image URL *</label>
+                                    <label className="form-label text-white-80">Featured Image *</label>
+
+                                    {/* File Upload */}
+                                    <div className="mb-3">
+                                        <input
+                                            type="file"
+                                            className="form-control"
+                                            style={inputStyle}
+                                            onChange={handleImageUpload}
+                                            accept="image/*"
+                                            disabled={uploading}
+                                        />
+                                        {uploading && <div className="text-info mt-1"><small>Uploading image...</small></div>}
+                                    </div>
+
+                                    {/* URL Input (Manual or Auto-filled) */}
                                     <input
                                         type="text"
                                         className="form-control"
                                         style={inputStyle}
                                         value={formData.image}
                                         onChange={(e) => setFormData({ ...formData, image: e.target.value })}
+                                        placeholder="/blog/my-image.jpg"
                                         required
                                     />
+
+                                    {/* Preview */}
+                                    {formData.image && (
+                                        <div className="mt-3 p-2 rounded" style={{ background: 'rgba(255,255,255,0.05)' }}>
+                                            <label className="form-label text-white-60 small mb-2">Preview:</label>
+                                            <img
+                                                src={formData.image}
+                                                alt="Preview"
+                                                className="img-fluid rounded"
+                                                style={{ maxHeight: '150px', width: '100%', objectFit: 'cover' }}
+                                                onError={(e) => (e.currentTarget.style.display = 'none')}
+                                            />
+                                        </div>
+                                    )}
                                 </div>
 
                                 <div className="mb-4">
