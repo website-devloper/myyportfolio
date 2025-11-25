@@ -4,9 +4,11 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useLocale } from './LocaleProvider';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
   const { t } = useLocale();
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -18,6 +20,12 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    // Check if we're on a blog page
+    if (pathname && pathname.includes('/blog/')) {
+      setActiveSection('blog');
+      return;
+    }
+
     const handleScroll = () => {
       // Scrolled state for navbar background
       setScrolled(window.scrollY > 50);
@@ -37,7 +45,7 @@ const Navbar = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
